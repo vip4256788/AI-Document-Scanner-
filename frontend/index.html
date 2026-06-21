@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Document Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📄 AI Document Scanner</h1>
+    <p class="subtitle">
+        Upload your document and get instant insights
+    </p>
+
+    <div class="upload-box" id="uploadBox">
+        <input type="file" id="fileInput" hidden>
+
+        <div id="uploadContent">
+            📤 Drag & Drop file here or click to upload
+        </div>
+    </div>
+
+    <input
+        type="text"
+        id="prompt"
+        placeholder="Example: Summarize this document"
+    >
+
+    <div class="buttons">
+        <button onclick="scan()">Scan</button>
+        <button onclick="analyze()">Analyze</button>
+    </div>
+
+    <div class="loader" id="loader"></div>
+
+    <div class="result">
+        <h2>📊 Result</h2>
+        <pre id="output"></pre>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
